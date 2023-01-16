@@ -2,14 +2,14 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\SuratMasuk;
+use App\Models\Surat;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 
 class DownloadController extends Controller
 {
-    public function masuk($file)
+    public function __invoke($file)
     {
-        return Storage::download($file);
+        return Storage::download('surat/' . $file);
     }
 }

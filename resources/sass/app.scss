@@ -6,3 +6,7 @@
 
 // Bootstrap
 @import 'bootstrap';
+
+nav .nav-item>.active {
+    font-weight: bold;
+}
